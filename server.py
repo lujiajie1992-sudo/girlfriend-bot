@@ -93,6 +93,7 @@ def reset():
     return jsonify({'ok': True})
 
 if __name__ == '__main__':
+    port = int(os.environ.get('PORT', 5188))
     print('🤍 呆呆熊 server 启动中...')
-    print('📱 打开 http://localhost:5188')
-    app.run(host='0.0.0.0', port=5188, debug=False)
+    print(f'📱 打开 http://localhost:{port}')
+    app.run(host='0.0.0.0', port=port, debug=False)
