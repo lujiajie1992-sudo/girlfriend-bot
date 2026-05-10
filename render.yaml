@@ -1,0 +1,10 @@
+AI-zaodai:
+  type: web
+  plan: free
+  region: oregon
+  buildCommand: ""
+  startCommand: "python server.py"
+  healthCheckPath: "/"
+  envVars:
+    - key: PORT
+      value: "5188"
